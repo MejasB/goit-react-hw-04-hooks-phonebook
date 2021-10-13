@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/MejasB/goit-react-hw-04-hooks-phonebook/static/css/main.3847e273.chunk.css",
+    "main.js": "/MejasB/goit-react-hw-04-hooks-phonebook/static/js/main.33845b70.chunk.js",
+    "main.js.map": "/MejasB/goit-react-hw-04-hooks-phonebook/static/js/main.33845b70.chunk.js.map",
+    "runtime-main.js": "/MejasB/goit-react-hw-04-hooks-phonebook/static/js/runtime-main.39211838.js",
+    "runtime-main.js.map": "/MejasB/goit-react-hw-04-hooks-phonebook/static/js/runtime-main.39211838.js.map",
+    "static/js/2.6a2903f0.chunk.js": "/MejasB/goit-react-hw-04-hooks-phonebook/static/js/2.6a2903f0.chunk.js",
+    "static/js/2.6a2903f0.chunk.js.map": "/MejasB/goit-react-hw-04-hooks-phonebook/static/js/2.6a2903f0.chunk.js.map",
+    "index.html": "/MejasB/goit-react-hw-04-hooks-phonebook/index.html",
+    "static/css/main.3847e273.chunk.css.map": "/MejasB/goit-react-hw-04-hooks-phonebook/static/css/main.3847e273.chunk.css.map",
+    "static/js/2.6a2903f0.chunk.js.LICENSE.txt": "/MejasB/goit-react-hw-04-hooks-phonebook/static/js/2.6a2903f0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39211838.js",
+    "static/js/2.6a2903f0.chunk.js",
+    "static/css/main.3847e273.chunk.css",
+    "static/js/main.33845b70.chunk.js"
+  ]
+}

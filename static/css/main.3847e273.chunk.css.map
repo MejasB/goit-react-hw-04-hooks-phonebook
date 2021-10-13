@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,iBAGE,qBAAsB,CACtB,QAAS,CACT,SACF,CAEA,KACE,+BAAiC,CACjC,iBACF","file":"main.3847e273.chunk.css","sourcesContent":["*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  font-family: 'Roboto', sans-serif;\n  font-style: normal;\n}\n"]}
