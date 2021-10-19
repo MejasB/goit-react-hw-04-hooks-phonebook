@@ -1,20 +1,26 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+import { useState } from "react";
 
-import { Form, Label, Input, LabelName, AddButton } from './ContactForm.styled';
+import { Form, Label, Input, LabelName, AddButton } from "./ContactForm.styled";
 
 export default function ContactForm({ onSubmit }) {
-  const handleSubmit = e => {
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const name = e.target.name.value;
-    const number = e.target.number.value;
 
     onSubmit(name, number);
-    reset(e);
+    setName("");
+    setNumber("");
   };
-
-  const reset = e => {
-    e.target.name.value = '';
-    e.target.number.value = '';
+  const onHandleChange = (e) => {
+    const { name, value } = e.target;
+    if (name === "name") {
+      setName(value);
+    } else if (name === "number") {
+      setNumber(value);
+    }
   };
 
   return (
@@ -22,6 +28,8 @@ export default function ContactForm({ onSubmit }) {
       <Label>
         <LabelName>Name</LabelName>
         <Input
+          onChange={onHandleChange}
+          value={name}
           type="text"
           name="name"
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -32,6 +40,8 @@ export default function ContactForm({ onSubmit }) {
       <Label>
         <LabelName>Number</LabelName>
         <Input
+          onChange={onHandleChange}
+          value={number}
           type="tel"
           name="number"
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
